@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yellowtail&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+}
+
+#logo {
+  font-family: 'Yellowtail', cursive;
+  color: yellow;
+
+}
+
+span {
+  color: red;
+}
+
+.dash {
+  color: snow;
+}
+
+li,
+a,
+p,
+h2,
+h3 {
+  color: snow;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-head {
+  min-height: 10vh;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  background: black;
+}
+
+#logo {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding: 2rem;
+}
+
+.menu li a:hover {
+  color: yellow;
+  letter-spacing: 0.2rem;
+  text-decoration: dashed;
+}
+
+.menu li a {
+
+  transition: all 0.2s ease-in-out;
+  font-size: 2rem;
+}
+
+.hamburger,
+.foot {
+  visibility: hidden;
+}
+
+.main-content {
+  min-height: 90vh;
+  background: url("../images/main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.main-content h2 {
+  color: yellow;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.main-content h3 {
+  color: yellow;
+
+  font-size: 2rem;
+}
+
+.about-section {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.about-section #about {
+  font-family: 'Open Sans', sans-serif;
+  
+  color: yellow;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.head {
+  min-height: 50vh;
+}
+
+.about-section .head p {
+  font-family: 'Open Sans', sans-serif;
+  
+  font-size: 2rem;
+}
+
+.about-section .img-sect {
+  min-height: 50vh;
+  text-align: center;
+
+}
+
+.img-sect h2 {
+  font-size: 3rem;
+  padding: 2rem;
+  color: yellow;
+
+}
+
+.img-sect h3 {
+  font-family: 'Yellowtail', cursive;
+  color: yellow;
+  font-size: 3rem;
+}
+
+.service-sect {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.badass{
+  text-align: center;
+  padding: 2rem;
+}
+.badass h1 {
+  font-family: 'Open Sans', sans-serif;
+  
+color: white;
+font-size: 2rem;
+  
+}
+.span{
+  font-size: 2.6rem;
+  color: yellow;
+  font-family: 'Yellowtail', cursive;
+  
+}
+  .box {
+    flex: 1 1 25rem;
+    height: 200px;
+    display: flex;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 0 0 2rem yellow;
+  }
+
+  .box h3 {
+  font-family: 'Open Sans', sans-serif;
+  
+    
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .box p {
+  font-family: 'Open Sans', sans-serif;
+    
+    font-size: 1.5rem;
+  }
+
+  .login {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url(../images/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .login form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5rem 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  form input {
+  font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    
+    margin: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+  }
+
+  form button {
+  font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    
+    padding: 1rem 3rem;
+    border: none;
+    background: yellow;
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+  }
+  form h3{
+    font-size: 3rem;
+  }
+  .login button:hover{
+    background: red;
+    color: snow;
+    box-shadow: 0 0 1rem yellow;
+  }
+
+  @media (max-width: 600px) {
+
+
+    html {
+      font-size: 45%;
+    }
+
+    #logo {
+      padding-top: 1rem;
+      font-size: 3rem;
+    }
+
+    li,
+    a,
+    p {
+      font-size: 2rem;
+      list-style: none;
+      text-decoration: none;
+      color: white;
+    }
+    .main-head{
+      position: static;
+      
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .menu {
+      display: block;
+    }
+
+    .menuItem {
+      display: block;
+      margin: 2rem 4rem;
+      font-size: 3rem;
+      padding: 2rem;
+      color: white;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .menuItem:hover {
+      text-decoration: underline;
+
+      letter-spacing: 0.5rem;
+      color: yellow;
+    }
+
+    .menu .foot {
+      text-align: center;
+    }
+
+    .menu .port {
+      transition: all 0.5s ease-in-out;
+    }
+
+    .menu .port:hover {
+      text-decoration: underline;
+      color: yellow;
+      letter-spacing: 0.5rem;
+    }
+
+    .hamburger,
+    .foot {
+      visibility: visible;
+
+    }
+
+    .menu .hamburger {
+      height: 30px;
+      width: 50px;
+      position: fixed;
+      z-index: 100;
+      top: 1rem;
+      right: 1rem;
+      padding: 4px;
+      border: none;
+      background: white;
+      cursor: pointer;
+    }
+
+    .material-icons img{
+      height: 30px;
+      width: 50px;
+      position: fixed;
+      top: 2rem;
+      z-index: 100;
+      right: 2rem;
+    }
+
+    .closeIcon {
+      top: 1rem;
+      visibility: hidden;
+    }
+
+    .menu {
+      position: fixed;
+      transform: translateY(-100%);
+      transition: transform 0.2s;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      background: black;
+      color: white;
+      list-style: none;
+      padding-top: 4rem;
+    }
+
+    .showMenu {
+      transform: translateY(0);
+    }
+
+  }

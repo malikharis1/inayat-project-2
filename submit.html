@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <div>
+    <h1>thanks for submitting</h1>
+    <h2>Our <span>Sensei</span> Will Contact You Soon......</h2>
+  </div>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yellowtail&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+body{
+  background: black;
+}
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    div h1,
+    div,
+    h2 {
+      padding: 50%;
+  font-family: 'Open Sans', sans-serif;
+      
+      color: snow;
+      font-size: 2rem;
+      animation: show;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: backwards;
+    }
+    @keyframes show {
+from{
+  color: red;
+}
+to{
+  color: yellow;
+}
+    }
+    span{
+  font-family: 'Yellowtail', cursive;
+      font-weight: 100;
+      color: yellow;
+      animation: hide;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: backwards;
+    }
+    @keyframes show {
+from{
+  font-size: 1rem;
+}
+to{
+  font-size: 3rem;
+}
+    }
+  </style>
+</body>
+
+</html>
